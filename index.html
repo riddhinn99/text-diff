@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
   <head>
     <meta charset="utf-8" />
@@ -15,20 +11,20 @@
   <body>
     <div class="container">
       <div class="left">
-        <textarea id="leftInput" class="leftText textbox">
+        <textarea id="leftInput" onfocus="this.value = '';" class="textbox">
 Please enter text here.</textarea
         >
-        <div id="leftOutput"></div>
+        <div id="leftOutput" class="output"></div>
       </div>
       <div class="right">
-        <textarea id="rightInput" class="textbox rightText">
+        <textarea id="rightInput" onfocus="this.value = '';" class="textbox">
 Please enter text here.</textarea
         >
-        <div id="rightOutput"></div>
+        <div id="rightOutput" class="output"></div>
       </div>
     </div>
     <div class="button">
-      <button id="submitButton">SUBMIT</button>
+      <button id="submitButton">Find Difference</button>
     </div>
 
     <script src="script.js" async defer></script>

@@ -1,62 +1,98 @@
+body {
+  background-color: #83c5be;
+}
+
 .container {
   display: grid;
   grid-template-columns: auto auto;
   justify-items: center;
+  margin-top: 100px;
 }
 .left {
   justify-self: right;
   margin: 10px;
 }
-
 .right {
   justify-self: left;
   margin: 10px;
 }
 
+.textbox:focus {
+  outline: none !important;
+  border: 2px solid #006d77;
+  box-shadow: 0 0 10px #edf6f9;
+}
 .textbox {
-  background-color: antiquewhite;
+  background-color: #edf6f9;
+  width: 450px;
   min-width: 300px;
+  min-height: 250px;
+  border-radius: 5px;
+  border: #006d77 solid 1px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: Helvetica, sans-serif;
 }
 
+.output {
+  font-size: 20px;
+  font-family: Helvetica, sans-serif;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 450px;
+  box-sizing: border-box;
+}
 #leftOutput {
   margin-top: 10px;
 }
-
 #rightOutput {
   margin-top: 10px;
 }
 
 .green-highlight {
-  background-color: green;
+  background-color: #80ed99;
 }
-
 .red-highlight {
-  background-color: red;
+  background-color: #ff5c6c;
 }
 
 .button {
   display: flex;
   justify-content: center;
+  margin-top: 20px;
+}
+button {
+  padding: 10px 50px 10px 50px;
+  font-size: 20px;
+  font-family: Helvetica, sans-serif;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  color: #68d8d6;
+  background-color: #393939;
+}
+button:hover {
+  box-shadow: 0 0 20px #edf6f9;
 }
 
-@media only screen and (max-width: 700px) {
-  body {
-    background-color: lightblue;
-  }
+@media only screen and (max-width: 1000px) {
   .container {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
   }
 
+  .textbox {
+    min-height: 150px;
+  }
+
   .left {
-    background-color: aqua;
     justify-self: center;
     margin: 10px;
   }
 
   .right {
-    background-color: aquamarine;
     justify-self: center;
     margin: 10px;
   }
