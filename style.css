@@ -45,9 +45,11 @@ body {
 }
 #leftOutput {
   margin-top: 10px;
+  word-wrap: break-word;
 }
 #rightOutput {
   margin-top: 10px;
+  word-wrap: break-word;
 }
 
 .green-highlight {
